@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personajes — Émily in Paris</title>
+<meta name="description" content="El elenco de Emily in Paris, de Emily a Marcello, más un quiz para descubrir qué personaje sos.">
+<script>document.documentElement.dataset.jsEnabled = 'true';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- La fotografía a lo largo del sitio es placeholder (fotos de stock/prensa de la serie, sin derechos comerciales) representando fotos reales — reemplazá los valores src por fotos de producción propias antes de publicar. -->
+
+<!-- Cursor personalizado -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img class="nav-logo-main nav-logo-img" src="images/logo.svg" alt="Logo de Émily in Paris">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <div class="nav-item has-dropdown">
+        <a href="temporadas.html" class="nav-link">Temporadas</a>
+        <button class="nav-caret" type="button" aria-label="Mostrar temporadas" aria-expanded="false">
+          <svg viewBox="0 0 12 8"><polyline points="1,1 6,6 11,1"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-inner">
+            <a href="temporadas.html#season-1" class="nav-link nav-sublink">Temporada 1</a>
+            <a href="temporadas.html#season-2" class="nav-link nav-sublink">Temporada 2</a>
+            <a href="temporadas.html#season-3" class="nav-link nav-sublink">Temporada 3</a>
+            <a href="temporadas.html#season-4" class="nav-link nav-sublink">Temporada 4</a>
+            <a href="temporadas.html#season-5" class="nav-link nav-sublink">Temporada 5</a>
+            <a href="temporadas.html#season-6-teaser" class="nav-link nav-sublink nav-sublink-muted">Temporada 6 · Próximamente</a>
+          </div>
+        </div>
+      </div>
+      <a href="moda.html" class="nav-link">Moda</a>
+      <div class="nav-item has-dropdown">
+        <a href="personajes.html" class="nav-link active">Personajes</a>
+        <button class="nav-caret" type="button" aria-label="Mostrar personajes" aria-expanded="false">
+          <svg viewBox="0 0 12 8"><polyline points="1,1 6,6 11,1"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-inner">
+            <a href="personajes.html#main-characters" class="nav-link nav-sublink">Principales</a>
+            <a href="personajes.html#supporting-characters" class="nav-link nav-sublink">Secundarios</a>
+            <a href="personajes.html#quiz" class="nav-link nav-sublink">Quiz: ¿Qué Personaje Sos?</a>
+          </div>
+        </div>
+      </div>
+      <a href="paris.html" class="nav-link">París</a>
+      <a href="galeria.html" class="nav-link">Galería</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="page-banner-media">
+    <img src="https://media.vogue.mx/photos/5faeaa006a65a5056f552df6/2:3/w_2560%2Cc_limit/EIP_101_Unit_00278R.jpg" alt="Retrato que representa a Emily" loading="eager">
+  </div>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <span class="eyebrow">Capítulo 03 — Le Cast</span>
+    <h1>Personajes</h1>
+    <p>Siete personas, dos ciudades y demasiados cables cruzados. Conocé al elenco detrás del caos.</p>
+  </div>
+</section>
+
+<main>
+
+<section class="characters" id="characters">
+
+  <h3 class="subsection-title" id="main-characters" data-reveal>Personajes Principales</h3>
+
+  <div class="character-carousel" data-reveal>
+    <div class="character-row character-row-main" id="mainCharacterCarousel" role="region" aria-label="Carrusel de personajes principales">
+
+    <article class="character-card is-active" tabindex="0">
+      <div class="character-media"><img src="https://media.vogue.mx/photos/5faeaa006a65a5056f552df6/2:3/w_2560%2Cc_limit/EIP_101_Unit_00278R.jpg" alt="Retrato que representa a Emily" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">La Soñadora</span>
+        <h3>Emily</h3>
+        <p class="character-quote">"Vine por un año. París tenía otros planes."</p>
+        <p class="character-arc">De pasante perdida en el 5º arrondissement a directora de la oficina de Roma: pasó de sobrevivir el choque cultural a liderar dos ciudades a la vez, sin perder nunca su costado más caótico.</p>
+      </div>
+    </article>
+
+    <article class="character-card" tabindex="0">
+      <div class="character-media"><img src="https://static.wikia.nocookie.net/spykids-mc/images/3/31/EIP_Mindy-Infobox.png/revision/latest?cb=20241029045100" alt="Retrato que representa a Mindy" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">La Estrella</span>
+        <h3>Mindy</h3>
+        <p class="character-quote">"La vida es demasiado corta para cantar en voz baja."</p>
+        <p class="character-arc">De niñera a cantante de cabaret y ahora posible protagonista de un triángulo amoroso con Alfie: su evolución es puro coraje escénico, temporada tras temporada.</p>
+      </div>
+    </article>
+
+    <article class="character-card" tabindex="0">
+      <div class="character-media"><img src="https://media.vogue.mx/photos/63a40039da95029016c29d13/2:3/w_2560%2Cc_limit/lucas-bravo-gabriel-emily-in-paris.jpg" alt="Retrato que representa a Gabriel" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Chef</span>
+        <h3>Gabriel</h3>
+        <p class="character-quote">"Buena comida, corazón honesto."</p>
+        <p class="character-arc">De cocinero de un bistró prestado a dueño de su propio restaurante: su vínculo con Emily —y con Camille— define buena parte del pulso romántico de la serie.</p>
+      </div>
+    </article>
+
+    <article class="character-card" tabindex="0">
+      <div class="character-media"><img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/04/12/6255441de687c.jpeg" alt="Retrato que representa a Alfie" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Realista</span>
+        <h3>Alfie</h3>
+        <p class="character-quote">"Yo no hago romance. Normalmente."</p>
+        <p class="character-arc">El banquero británico que juró no enamorarse en París se fue, volvió en la temporada 5 y ahora comparte una química inesperada con Mindy.</p>
+      </div>
+    </article>
+
+    <article class="character-card" tabindex="0">
+      <div class="character-media"><img src="https://static.wikia.nocookie.net/spykids-mc/images/1/15/Camille-Infobox.jpg/revision/latest?cb=20240916034232" alt="Retrato que representa a Camille" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Alma Antigua</span>
+        <h3>Camille</h3>
+        <p class="character-quote">"Familia, vino y amor complicado."</p>
+        <p class="character-arc">Presente en las primeras cuatro temporadas como la mejor amiga —y a veces rival— de Emily, se despide de la serie tras su casamiento con Gabriel en la temporada 3.</p>
+      </div>
+    </article>
+
+    <article class="character-card" tabindex="0">
+      <div class="character-media"><img src="https://hips.hearstapps.com/hmg-prod/images/sylvie-emily-en-paris-4-1642790687.jpg?crop=0.5634357762017337xw:1xh;center,top&resize=640:*" alt="Retrato que representa a Sylvie" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">La Directrice</span>
+        <h3>Sylvie</h3>
+        <p class="character-quote">"El chic no es un disfraz. Es una actitud."</p>
+        <p class="character-arc">De jefa temida en Savoir a fundadora de su propia agencia: es la brújula de estilo —y de sarcasmo— de toda la serie.</p>
+      </div>
+    </article>
+
+    </div>
+    <div class="character-carousel-controls" aria-label="Controles del carrusel">
+      <button type="button" class="character-carousel-btn" id="characterPrev" aria-label="Ver personaje anterior">←</button>
+      <span class="character-carousel-hint">Deslizá sobre un retrato</span>
+      <button type="button" class="character-carousel-btn" id="characterNext" aria-label="Ver personaje siguiente">→</button>
+    </div>
+  </div>
+
+  <article class="character-spotlight" data-reveal>
+    <div class="character-spotlight-media">
+      <img src="https://media.glamour.mx/photos/66c62cbcc85bfaf0ae1845f9/2:3/w_1332,h_1998,c_limit/marcello-emily-in-paris-temporada-4.jpg" alt="Retrato que representa a Marcello" loading="lazy">
+    </div>
+    <div class="character-spotlight-copy">
+      <span class="character-role">El Recién Llegado</span>
+      <h3>Marcello Muratori</h3>
+      <p class="character-quote">"Roma no compite con París. Simplemente, también conquista."</p>
+      <p>Heredero de una casa de cachemira en Roma, Marcello aparece en la temporada 4 y se convierte en uno de los pilares de la temporada 5, cuando Emily se muda a Italia para abrir la oficina de Agence Grateau. Su romance con Emily traslada parte de la estética de la serie del beige parisino a los tonos cálidos de la Toscana.</p>
+    </div>
+  </article>
+
+  <h3 class="subsection-title" id="supporting-characters" data-reveal>Personajes Secundarios</h3>
+
+  <div class="character-row character-row-secondary">
+
+    <article class="character-card" data-reveal>
+      <div class="character-media"><img src="https://m.media-amazon.com/images/M/MV5BNWUwZTQ1OTctMWU4My00MjYzLThkOWYtMzQyMzg0OGZmMjBhXkEyXkFqcGc@._V1_.jpg" alt="Retrato que representa a Luc" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Filósofo de Oficina</span>
+        <h3>Luc</h3>
+        <p class="character-quote">"El trabajo es solo una parte de la vida, no toda."</p>
+      </div>
+    </article>
+
+    <article class="character-card character-card-alt" data-reveal>
+      <div class="character-media"><img src="https://hips.hearstapps.com/hmg-prod/images/eip-101-unit-00232r-3d1f78b-1602526371.jpg?crop=0.668xw:1.00xh;0.114xw,0&resize=640:*" alt="Retrato que representa a Julien" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Estratega</span>
+        <h3>Julien</h3>
+        <p class="character-quote">"El detalle lo es todo, chérie."</p>
+      </div>
+    </article>
+
+    <article class="character-card" data-reveal>
+      <div class="character-media"><img src="https://hips.hearstapps.com/hmg-prod/images/emily-in-paris-n-s4-e3-00-27-23-06rc-66be5bcc0df3b.jpg?crop=0.668xw:1.00xh;0.250xw,0&resize=1200:*" alt="Retrato que representa a Nicolas" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Heredero</span>
+        <h3>Nicolas</h3>
+        <p class="character-quote">"Los negocios y el amor no siempre se llevan bien."</p>
+      </div>
+    </article>
+
+    <article class="character-card character-card-alt" data-reveal>
+      <div class="character-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSGjxHsum9SQ4DA0p-tr8ndz6WDr0Gz3H--VyBqDZR9Chx8-KlYT_hTo&s=10" alt="Retrato que representa a Antoine" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Cliente Encantador</span>
+        <h3>Antoine</h3>
+        <p class="character-quote">"El perfume correcto lo cambia todo."</p>
+      </div>
+    </article>
+
+    <article class="character-card" data-reveal>
+      <div class="character-media"><img src="https://www.datocms-assets.com/70938/1723454162-1723101831-img_8340.jpeg?auto=format%2Ccompress&cs=srgb" alt="Retrato que representa a Laurent" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Anfitrión</span>
+        <h3>Laurent G</h3>
+        <p class="character-quote">"En Saint-Tropez, todo se resuelve con rosé."</p>
+      </div>
+    </article>
+
+    <article class="character-card character-card-alt" data-reveal>
+      <div class="character-media"><img src="https://assets.capitalfm.com/2020/39/who-plays-pierre-cadault-in-emily-in-paris---jean-christophe-bouvet-1601405069-view-0.jpg" alt="Retrato que representa a Pierre" loading="lazy"></div>
+      <div class="character-copy">
+        <span class="character-role">El Maestro</span>
+        <h3>Pierre Cadault</h3>
+        <p class="character-quote">"La moda no se explica. Se impone."</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="quiz" id="quiz">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">Capítulo 06 — Le Jeu</span>
+    <h2>¿Qué Personaje Sos?</h2>
+    <p class="section-lede">Cuatro preguntas. Un veredicto muy afrancesado.</p>
+  </div>
+
+  <div class="quiz-card" data-reveal>
+    <div class="quiz-progress" id="quizProgress">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+
+    <div class="quiz-body" id="quizBody">
+
+      <div class="quiz-question active" data-index="0">
+        <h3>Tu sábado a la mañana en París arranca con…</h3>
+        <div class="quiz-options">
+          <button data-value="emily">Un croissant y un plan improvisado</button>
+          <button data-value="mindy">Ensayando karaoke en la ducha</button>
+          <button data-value="gabriel">Eligiendo los productos más frescos del mercado</button>
+          <button data-value="alfie">Café, números y una buena planilla de cálculo</button>
+          <button data-value="camille">Una invitación a la inauguración de una galería</button>
+          <button data-value="sylvie">Un blazer impecable, sea cual sea el día</button>
+          <button data-value="marcello">Un espresso doble antes de la primera reunión en Roma</button>
+        </div>
+      </div>
+
+      <div class="quiz-question" data-index="1">
+        <h3>Tu lenguaje del amor es…</h3>
+        <div class="quiz-options">
+          <button data-value="emily">Gestos románticos enormes, un poco caóticos</button>
+          <button data-value="mindy">Un dueto que nadie pidió</button>
+          <button data-value="gabriel">Cocinarte algo desde cero</button>
+          <button data-value="alfie">Honestidad brutal, con un guiño</button>
+          <button data-value="camille">Lealtad, incluso cuando todo se complica</button>
+          <button data-value="sylvie">Gusto impecable y estándares altísimos</button>
+          <button data-value="marcello">Una escapada de fin de semana sin avisar</button>
+        </div>
+      </div>
+
+      <div class="quiz-question" data-index="2">
+        <h3>Tu idea de éxito profesional es…</h3>
+        <div class="quiz-options">
+          <button data-value="emily">Volverte viral por las razones correctas</button>
+          <button data-value="mindy">Ser dueña del escenario, literalmente</button>
+          <button data-value="gabriel">Un restaurante con tu nombre en la puerta</button>
+          <button data-value="alfie">Cerrar el trato antes del almuerzo</button>
+          <button data-value="camille">Manejar el negocio familiar, a tu manera</button>
+          <button data-value="sylvie">Ser la mujer más respetada de la sala</button>
+          <button data-value="marcello">Llevar el negocio familiar a otro país</button>
+        </div>
+      </div>
+
+      <div class="quiz-question" data-index="3">
+        <h3>Tu uniforme parisino es…</h3>
+        <div class="quiz-options">
+          <button data-value="emily">Estampados que chocan y una boina como declaración</button>
+          <button data-value="mindy">Lentejuelas. Siempre lentejuelas</button>
+          <button data-value="gabriel">Un delantal que vio mil servicios</button>
+          <button data-value="alfie">Un tapado a medida, sin vueltas</button>
+          <button data-value="camille">Neutros afrancesados sin esfuerzo aparente</button>
+          <button data-value="sylvie">Todo negro, toda confianza</button>
+          <button data-value="marcello">Cashmere de pies a cabeza</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <img id="resultImg" src="" alt="">
+        <span class="character-role" id="resultRole"></span>
+        <h3 id="resultName"></h3>
+        <p id="resultDesc"></p>
+        <button class="btn btn-outline" id="quizRetake">Repetir el Quiz</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<section class="next-chapter">
+  <a href="paris.html" class="next-chapter-link">
+    <span class="next-chapter-label">Próximo Capítulo</span>
+    <span class="next-chapter-title">París <em>— La Ville</em><span class="next-chapter-arrow">→</span></span>
+  </a>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <h3>Émily <em>in Paris</em></h3>
+      <p>Un concepto editorial de fans, imaginado para quienes nunca terminaron de irse del 5º arrondissement.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Navegación del pie de página">
+      <span class="footer-heading">Navegar</span>
+      <a href="index.html">Inicio</a>
+      <a href="temporadas.html">Temporadas</a>
+      <a href="moda.html">Moda</a>
+      <a href="personajes.html">Personajes</a>
+      <a href="paris.html">París</a>
+      <a href="galeria.html">Galería</a>
+      <a href="personajes.html#quiz">Quiz</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="footer-social">
+      <span class="footer-heading">Seguinos</span>
+      <span class="footer-handle">@emilyinparis.editorial</span>
+      <div class="footer-grid">
+        <img src="images/ig1.png" alt="" loading="lazy">
+        <img src="images/ig2.png" alt="" loading="lazy">
+        <img src="images/ig3.png" alt="" loading="lazy">
+        <img src="images/ig4.png" alt="" loading="lazy">
+        <img src="images/ig5.png" alt="" loading="lazy">
+        <img src="images/ig6.png" alt="" loading="lazy">
+      </div>
+      <div class="footer-icons">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 18c.6-1.8 1.4-4.6 1.9-6.6M12 12c0-1.7 1.3-3.3 3.2-3.3 2 0 3.1 1.4 3.1 3.1 0 2.6-1.4 4.9-3.6 4.9-1 0-1.8-.5-2.1-1.1"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v9.5a2.8 2.8 0 1 1-2.2-2.7"/><path d="M14 4c.4 2 1.9 3.4 4 3.6"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Émily in Paris — Edición de Fans. No afiliado a Netflix ni a los productores de la serie.</span>
+    <span class="footer-signoff">La vie est belle.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

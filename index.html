@@ -13,54 +13,52 @@
 </head>
 <body>
 
-<!-- La fotografía a lo largo del sitio es placeholder (Lorem Picsum, sin derechos) representando fotos reales — reemplazá los valores src por fotos de producción. -->
+<!-- La fotografía a lo largo del sitio es placeholder (fotos de stock/prensa de la serie, sin derechos comerciales) representando fotos reales — reemplazá los valores src por fotos de producción propias antes de publicar. -->
 
 <!-- Cursor personalizado -->
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
 
-<!-- ===== NAV ===== -->
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#home" class="nav-logo">
-       <!-- <span >Émily</span><span class="nav-logo-sub">in&nbsp;Paris</span> -->
-      <img class="nav-logo-main nav-logo-img" src="./images/logo.svg" alt="Logo de Émily in Paris">
+    <a href="index.html" class="nav-logo">
+      <img class="nav-logo-main nav-logo-img" src="images/logo.svg" alt="Logo de Émily in Paris">
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#home" class="nav-link">Inicio</a>
-
+      <a href="index.html" class="nav-link active">Inicio</a>
       <div class="nav-item has-dropdown">
-        <a href="#seasons" class="nav-link">Temporadas</a>
+        <a href="temporadas.html" class="nav-link">Temporadas</a>
         <button class="nav-caret" type="button" aria-label="Mostrar temporadas" aria-expanded="false">
           <svg viewBox="0 0 12 8"><polyline points="1,1 6,6 11,1"/></svg>
         </button>
         <div class="nav-dropdown">
-          <a href="#season-1" class="nav-link nav-sublink">Temporada 1</a>
-          <a href="#season-2" class="nav-link nav-sublink">Temporada 2</a>
-          <a href="#season-3" class="nav-link nav-sublink">Temporada 3</a>
-          <a href="#season-4" class="nav-link nav-sublink">Temporada 4</a>
-          <a href="#season-5" class="nav-link nav-sublink">Temporada 5</a>
-          <a href="#season-6-teaser" class="nav-link nav-sublink nav-sublink-muted">Temporada 6 · Próximamente</a>
+          <div class="nav-dropdown-inner">
+            <a href="temporadas.html#season-1" class="nav-link nav-sublink">Temporada 1</a>
+            <a href="temporadas.html#season-2" class="nav-link nav-sublink">Temporada 2</a>
+            <a href="temporadas.html#season-3" class="nav-link nav-sublink">Temporada 3</a>
+            <a href="temporadas.html#season-4" class="nav-link nav-sublink">Temporada 4</a>
+            <a href="temporadas.html#season-5" class="nav-link nav-sublink">Temporada 5</a>
+            <a href="temporadas.html#season-6-teaser" class="nav-link nav-sublink nav-sublink-muted">Temporada 6 · Próximamente</a>
+          </div>
         </div>
       </div>
-
-      <a href="#fashion" class="nav-link">Moda</a>
-
+      <a href="moda.html" class="nav-link">Moda</a>
       <div class="nav-item has-dropdown">
-        <a href="#characters" class="nav-link">Personajes</a>
+        <a href="personajes.html" class="nav-link">Personajes</a>
         <button class="nav-caret" type="button" aria-label="Mostrar personajes" aria-expanded="false">
           <svg viewBox="0 0 12 8"><polyline points="1,1 6,6 11,1"/></svg>
         </button>
         <div class="nav-dropdown">
-          <a href="#main-characters" class="nav-link nav-sublink">Principales</a>
-          <a href="#supporting-characters" class="nav-link nav-sublink">Secundarios</a>
+          <div class="nav-dropdown-inner">
+            <a href="personajes.html#main-characters" class="nav-link nav-sublink">Principales</a>
+            <a href="personajes.html#supporting-characters" class="nav-link nav-sublink">Secundarios</a>
+            <a href="personajes.html#quiz" class="nav-link nav-sublink">Quiz: ¿Qué Personaje Sos?</a>
+          </div>
         </div>
       </div>
-
-      <a href="#paris" class="nav-link">París</a>
-      <a href="#gallery" class="nav-link">Galería</a>
-      <a href="#quiz" class="nav-link">Quiz</a>
-      <a href="#contact" class="nav-link">Contacto</a>
+      <a href="paris.html" class="nav-link">París</a>
+      <a href="galeria.html" class="nav-link">Galería</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
@@ -68,10 +66,9 @@
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <section class="hero" id="home">
   <div class="hero-media">
-    <img src="./images/hero.jpg" alt="Mujer caminando por una calle parisina a la hora dorada" class="hero-img" id="heroImg">
+    <img src="images/hero.jpg" alt="Mujer caminando por una calle parisina a la hora dorada" class="hero-img" id="heroImg">
     <div class="hero-overlay"></div>
     <div class="hero-grain"></div>
   </div>
@@ -84,7 +81,7 @@
     <p class="hero-kicker">Bonjour, Paris — Vol. 01</p>
     <h1 class="hero-title">Viviendo el Sueño<br><em>Parisino</em></h1>
     <p class="hero-sub">Moda. Romance. Reinvención. Un viaje editorial por la vida de Emily Cooper.</p>
-    <a href="#seasons" class="btn btn-primary"><span>Entrá en la Historia</span></a>
+    <a href="temporadas.html" class="btn btn-primary"><span>Entrá en la Historia</span></a>
   </div>
 
   <div class="hero-issue">
@@ -92,583 +89,95 @@
     <span class="hero-vol">Vol. 01 — Edición París</span>
   </div>
 
-  <a href="#seasons" class="hero-scroll" aria-label="Desplazarse al contenido"><span></span>Deslizá</a>
+  <a href="#chapters" class="hero-scroll" aria-label="Desplazarse al contenido"><span></span>Deslizá</a>
 </section>
 
 <main>
 
-<!-- ===== SEASONS ===== -->
-<section class="seasons" id="seasons">
+<section class="hub" id="chapters">
   <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 01 — L'Histoire</span>
-    <h2>Cinco Temporadas en París (y Roma)</h2>
-    <p class="section-lede">Cada capítulo de la vida parisina de Emily, contado como lo haría una revista: en momentos, no en minutos.</p>
+    <span class="eyebrow">Empezá Aquí</span>
+    <h2>Explorá la Revista</h2>
+    <p class="section-lede">Seis capítulos de la vida parisina de Emily. Elegí por dónde entrar.</p>
   </div>
 
-  <div class="season-list">
-
-    <article class="season-row" id="season-1" data-reveal>
-      <span class="season-num">01</span>
-      <div class="season-media"><img src="https://es.web.img3.acsta.net/r_1920_1080/pictures/20/07/23/11/42/1325812.jpg" alt="Una primera primavera en París" loading="lazy"></div>
-      <div class="season-copy">
-        <span class="season-tag">Temporada 1 · 2020</span>
-        <h3>Bonjour, Paris</h3>
-        <p>Una ejecutiva de marketing de Chicago aterriza en el 5º arrondissement sin saber una palabra de francés y sin ninguna de las reglas. Su estilo es la contracara total de la elegancia parisina: estampados que chocan entre sí, boinas rojas imposibles de ignorar y una obsesión por publicar cada café con leche. París se resiste. Después, se rinde.</p>
-        <div class="season-meta">
-          <div class="season-palette">
-            <span class="swatch" style="background:#D62839"></span>
-            <span class="swatch" style="background:#2F5DAA"></span>
-            <span class="swatch" style="background:#C8A96A"></span>
-            <span class="swatch" style="background:#1D1D1D"></span>
-          </div>
-          <p class="season-influence"><strong>Influencia</strong> El corporativo de Chicago choca de frente con la alta costura francesa.</p>
-        </div>
+  <div class="hub-grid">
+    <a class="hub-card" href="temporadas.html" data-reveal>
+      <div class="hub-card-media"><img src="https://es.web.img3.acsta.net/r_1920_1080/pictures/20/07/23/11/42/1325812.jpg" alt="Escena de una primera primavera en París" loading="lazy"></div>
+      <div class="hub-card-copy">
+        <span class="hub-card-num">Capítulo 01</span>
+        <h3>Temporadas</h3>
+        <p>Cinco temporadas en París (y Roma), contadas como las contaría una revista.</p>
+        <span class="hub-card-cta">Leer más <svg viewBox="0 0 12 8"><polyline points="1,4 11,4"/><polyline points="7,1 11,4 7,7"/></svg></span>
       </div>
-    </article>
-
-    <article class="season-row season-row-alt" id="season-2" data-reveal>
-      <span class="season-num">02</span>
-      <div class="season-media"><img src="https://es.web.img2.acsta.net/r_1280_720/pictures/21/09/24/01/29/1133738.jpg" alt="Una segunda temporada de decisiones" loading="lazy"></div>
-      <div class="season-copy">
-        <span class="season-tag">Temporada 2 · 2021</span>
-        <h3>La Vie Continue</h3>
-        <p>Con Savoir renombrada y su francés apenas mejor, Emily empieza a filtrar su identidad americana a través del lente parisino: los colores siguen siendo intensos, pero las siluetas se afinan y los sacos ya entienden de sastrería francesa. El corazón, en cambio, sigue tan desordenado como siempre.</p>
-        <div class="season-meta">
-          <div class="season-palette">
-            <span class="swatch" style="background:#7A2E4A"></span>
-            <span class="swatch" style="background:#2F5DAA"></span>
-            <span class="swatch" style="background:#C8A96A"></span>
-            <span class="swatch" style="background:#E8A9B5"></span>
-          </div>
-          <p class="season-influence"><strong>Influencia</strong> Sastrería francesa con acentos de joyería y tonos más profundos.</p>
-        </div>
-      </div>
-    </article>
-
-    <article class="season-row" id="season-3" data-reveal>
-      <span class="season-num">03</span>
-      <div class="season-media"><img src="https://es.web.img3.acsta.net/r_1280_720/pictures/22/09/23/11/37/0746502.jpg" alt="Una tercera temporada de nuevos comienzos" loading="lazy"></div>
-      <div class="season-copy">
-        <span class="season-tag">Temporada 3 · 2022</span>
-        <h3>Nouveaux Chapitres</h3>
-        <p>Sylvie se va, Savoir se parte en dos y Emily tiene que elegir bando. Su guardarropa se vuelve más audaz para la noche —lentejuelas, sedas, un vestido de novia que no es el suyo— mientras la agencia y la amistad con Camille se ponen a prueba en un casamiento que cierra la temporada en un castillo de Champagne.</p>
-        <div class="season-meta">
-          <div class="season-palette">
-            <span class="swatch" style="background:#1D1D1D"></span>
-            <span class="swatch" style="background:#C8A96A"></span>
-            <span class="swatch" style="background:#B9B4AC"></span>
-            <span class="swatch" style="background:#D62839"></span>
-          </div>
-          <p class="season-influence"><strong>Influencia</strong> Lentejuelas y sedas de gala para una temporada de rupturas y decisiones.</p>
-        </div>
-      </div>
-    </article>
-
-    <article class="season-row season-row-alt" id="season-4" data-reveal>
-      <span class="season-num">04</span>
-      <div class="season-media"><img src="https://es.web.img3.acsta.net/r_1280_720/img/06/d5/06d574c16b5729488f1a6d223bf61cfa.jpg" alt="Una cuarta temporada, plenamente instalada" loading="lazy"></div>
-      <div class="season-copy">
-        <span class="season-tag">Temporada 4 · 2024</span>
-        <h3>Toujours Paris</h3>
-        <p>Agence Grateau se consolida, Gabriel abre su propio restaurante y Emily conoce a Marcello, heredero de una casa de cachemira italiana. La temporada termina con una escapada a Roma que lo cambia todo: por primera vez, París no es el único lugar que la llama.</p>
-        <div class="season-meta">
-          <div class="season-palette">
-            <span class="swatch" style="background:#C1653B"></span>
-            <span class="swatch" style="background:#C8A96A"></span>
-            <span class="swatch" style="background:#E8A9B5"></span>
-            <span class="swatch" style="background:#F1ECE4"></span>
-          </div>
-          <p class="season-influence"><strong>Influencia</strong> El beige parisino empieza a mezclarse con las primeras notas de Italia.</p>
-        </div>
-      </div>
-    </article>
-
-    <article class="season-row" id="season-5" data-reveal>
-      <span class="season-num">05</span>
-      <div class="season-media"><img src="https://es.web.img2.acsta.net/r_1280_720/img/e0/30/e0304e8b4b894ee876c7e91b9a8d0d10.jpg" alt="Una quinta temporada entre París y Roma" loading="lazy"></div>
-      <div class="season-copy">
-        <span class="season-tag">Temporada 5 · 2025</span>
-        <h3>La Dolce Emily</h3>
-        <p>Emily se muda a Roma para abrir la oficina italiana de Agence Grateau, dividiendo su vida entre dos ciudades y dos idiomas. Su estilo absorbe siluetas más sueltas y colores tierra inspirados en la Toscana, sin perder nunca esa base parisina. Un secreto amenaza su amistad más cercana justo cuando todo parecía, por fin, acomodarse.</p>
-        <div class="season-meta">
-          <div class="season-palette">
-            <span class="swatch" style="background:#C1653B"></span>
-            <span class="swatch" style="background:#8A8B5C"></span>
-            <span class="swatch" style="background:#C8A96A"></span>
-            <span class="swatch" style="background:#F1ECE4"></span>
-          </div>
-          <p class="season-influence"><strong>Influencia</strong> Siluetas sueltas y paleta tierra, inspiradas en la Toscana y en Roma.</p>
-        </div>
-      </div>
-    </article>
-
-    <article class="season-teaser" id="season-6-teaser" data-reveal>
-      <span class="season-teaser-num">06</span>
-      <div class="season-teaser-copy">
-        <span class="season-teaser-tag">Próximamente</span>
-        <h3>Temporada 6 — Confirmada por Netflix</h3>
-        <p>Todavía no hay fecha de estreno, pero la producción ya fue confirmada oficialmente. Mientras esperamos, seguimos analizando cada detalle de las primeras cinco temporadas.</p>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- ===== FASHION ===== -->
-<section class="fashion" id="fashion">
-  <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 02 — La Mode</span>
-    <h2>El Vestidor</h2>
-    <p class="section-lede">Estampados que chocan, boinas con actitud y looks que se leen como oraciones completas. Este es el placard que lanzó mil capturas de pantalla.</p>
-  </div>
-
-  <div class="fashion-grid">
-
-    <article class="fashion-card" data-reveal>
-      <div class="fashion-media">
-        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-12/22/20/asset/dbb8a544b7f3/sub-buzz-1048-1640204741-10.jpg?crop=1506:1800;0,0&downsize=900:*&output-format=auto&output-quality=auto" alt="Look con boina roja y trench cream" loading="lazy">
-        <span class="fashion-shine"></span>
-      </div>
-      <div class="fashion-overlay">
-        <span class="fashion-season">Temporada 1 · Look 03</span>
-        <h3>El Momento Boina</h3>
-        <p>Una boina roja, una trench cream y la audacia justa para usar las dos juntas a la oficina.</p>
-      </div>
-    </article>
-
-    <article class="fashion-card" data-reveal>
-      <div class="fashion-media">
-        <img src="https://people.com/thmb/47MvlM3A0oJMEKLwVys7bbPMgAY=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(589x0:591x2)/emily-in-paris-best-looks-5-ad3644ea35f34d42a2643036f135c50e.jpg" alt="Look de oficina con blazer sastrero" loading="lazy">
-        <span class="fashion-shine"></span>
-      </div>
-      <div class="fashion-overlay">
-        <span class="fashion-season">Temporada 1 · Look 07</span>
-        <h3>Poder de Oficina</h3>
-        <p>Hombros marcados, una silueta digna de Savoir y tacos que significan negocios.</p>
-      </div>
-    </article>
-
-    <article class="fashion-card" data-reveal>
-      <div class="fashion-media">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmmV1WijwouffaP6fCbEQa00QSAkoOnDeMV5jQ9p0pfpcVVJH6Z3JWWc&s=10" alt="Vestido de vichy para salir a un café" loading="lazy">
-        <span class="fashion-shine"></span>
-      </div>
-      <div class="fashion-overlay">
-        <span class="fashion-season">Temporada 2 · Look 02</span>
-        <h3>Café Chic</h3>
-        <p>Vichy, chatitas y un croissant sostenido como si fuera un accesorio de pasarela.</p>
-      </div>
-    </article>
-
-    <article class="fashion-card" data-reveal>
-      <div class="fashion-media">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-2250380980-693fd74ba6501.jpg" alt="Vestido de lentejuelas para una gala" loading="lazy">
-        <span class="fashion-shine"></span>
-      </div>
-      <div class="fashion-overlay">
-        <span class="fashion-season">Temporada 2 · Look 11</span>
-        <h3>Noche de Gala</h3>
-        <p>Lentejuelas de arriba abajo, pensadas para una entrada triunfal por una escalera.</p>
-      </div>
-    </article>
-
-    <article class="fashion-card" data-reveal>
-      <div class="fashion-media">
-        <img src="https://i.pinimg.com/736x/98/59/53/98595362e03a3203ec9381908eaa1f36.jpg" alt="Look a rayas para pasear por el mercado" loading="lazy">
-        <span class="fashion-shine"></span>
-      </div>
-      <div class="fashion-overlay">
-        <span class="fashion-season">Temporada 3 · Look 04</span>
-        <h3>Domingo de Mercado</h3>
-        <p>Rayas marineras y pantalones anchos, vestida para pasear, no para trabajar.</p>
-      </div>
-    </article>
-
-    <article class="fashion-card" data-reveal>
-      <div class="fashion-media">
-        <img src="https://media.vogue.es/photos/66e842a1589fe5158b952c89/2:3/w_2560%2Cc_limit/EIP_410_Unit_01276R.jpg" alt="Vestido floral en una terraza" loading="lazy">
-        <span class="fashion-shine"></span>
-      </div>
-      <div class="fashion-overlay">
-        <span class="fashion-season">Temporada 4 · Look 01</span>
-        <h3>Romance en la Terraza</h3>
-        <p>Un vestido floral hecho para la hora dorada y una sola vista que vale la pena.</p>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- ===== CHARACTERS ===== -->
-<section class="characters" id="characters">
-  <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 03 — Le Cast</span>
-    <h2>Personajes</h2>
-    <p class="section-lede">Siete personas, dos ciudades y demasiados cables cruzados. Conocé al elenco detrás del caos.</p>
-  </div>
-
-  <h3 class="subsection-title" id="main-characters" data-reveal>Personajes Principales</h3>
-
-  <div class="character-carousel" data-reveal>
-    <div class="character-row character-row-main" id="mainCharacterCarousel" role="region" aria-label="Carrusel de personajes principales">
-
-    <article class="character-card is-active" tabindex="0">
-      <div class="character-media"><img src="https://media.vogue.mx/photos/5faeaa006a65a5056f552df6/2:3/w_2560%2Cc_limit/EIP_101_Unit_00278R.jpg" alt="Retrato que representa a Emily" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">La Soñadora</span>
-        <h3>Emily</h3>
-        <p class="character-quote">"Vine por un año. París tenía otros planes."</p>
-        <p class="character-arc">De pasante perdida en el 5º arrondissement a directora de la oficina de Roma: pasó de sobrevivir el choque cultural a liderar dos ciudades a la vez, sin perder nunca su costado más caótico.</p>
-      </div>
-    </article>
-
-    <article class="character-card" tabindex="0">
-      <div class="character-media"><img src="https://static.wikia.nocookie.net/spykids-mc/images/3/31/EIP_Mindy-Infobox.png/revision/latest?cb=20241029045100" alt="Retrato que representa a Mindy" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">La Estrella</span>
-        <h3>Mindy</h3>
-        <p class="character-quote">"La vida es demasiado corta para cantar en voz baja."</p>
-        <p class="character-arc">De niñera a cantante de cabaret y ahora posible protagonista de un triángulo amoroso con Alfie: su evolución es puro coraje escénico, temporada tras temporada.</p>
-      </div>
-    </article>
-
-    <article class="character-card" tabindex="0">
-      <div class="character-media"><img src="https://media.vogue.mx/photos/63a40039da95029016c29d13/2:3/w_2560%2Cc_limit/lucas-bravo-gabriel-emily-in-paris.jpg" alt="Retrato que representa a Gabriel" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Chef</span>
-        <h3>Gabriel</h3>
-        <p class="character-quote">"Buena comida, corazón honesto."</p>
-        <p class="character-arc">De cocinero de un bistró prestado a dueño de su propio restaurante: su vínculo con Emily —y con Camille— define buena parte del pulso romántico de la serie.</p>
-      </div>
-    </article>
-
-    <article class="character-card" tabindex="0">
-      <div class="character-media"><img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/04/12/6255441de687c.jpeg" alt="Retrato que representa a Alfie" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Realista</span>
-        <h3>Alfie</h3>
-        <p class="character-quote">"Yo no hago romance. Normalmente."</p>
-        <p class="character-arc">El banquero británico que juró no enamorarse en París se fue, volvió en la temporada 5 y ahora comparte una química inesperada con Mindy.</p>
-      </div>
-    </article>
-
-    <article class="character-card" tabindex="0">
-      <div class="character-media"><img src="https://static.wikia.nocookie.net/spykids-mc/images/1/15/Camille-Infobox.jpg/revision/latest?cb=20240916034232" alt="Retrato que representa a Camille" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Alma Antigua</span>
-        <h3>Camille</h3>
-        <p class="character-quote">"Familia, vino y amor complicado."</p>
-        <p class="character-arc">Presente en las primeras cuatro temporadas como la mejor amiga —y a veces rival— de Emily, se despide de la serie tras su casamiento con Gabriel en la temporada 3.</p>
-      </div>
-    </article>
-
-    <article class="character-card" tabindex="0">
-      <div class="character-media"><img src="https://hips.hearstapps.com/hmg-prod/images/sylvie-emily-en-paris-4-1642790687.jpg?crop=0.5634357762017337xw:1xh;center,top&resize=640:*" alt="Retrato que representa a Sylvie" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">La Directrice</span>
-        <h3>Sylvie</h3>
-        <p class="character-quote">"El chic no es un disfraz. Es una actitud."</p>
-        <p class="character-arc">De jefa temida en Savoir a fundadora de su propia agencia: es la brújula de estilo —y de sarcasmo— de toda la serie.</p>
-      </div>
-    </article>
-
-    </div>
-    <div class="character-carousel-controls" aria-label="Controles del carrusel">
-      <button type="button" class="character-carousel-btn" id="characterPrev" aria-label="Ver personaje anterior">←</button>
-      <span class="character-carousel-hint">Deslizá sobre un retrato</span>
-      <button type="button" class="character-carousel-btn" id="characterNext" aria-label="Ver personaje siguiente">→</button>
-    </div>
-  </div>
-
-  <article class="character-spotlight" data-reveal>
-    <div class="character-spotlight-media">
-      <img src="https://media.glamour.mx/photos/66c62cbcc85bfaf0ae1845f9/2:3/w_1332,h_1998,c_limit/marcello-emily-in-paris-temporada-4.jpg" alt="Retrato que representa a Marcello" loading="lazy">
-    </div>
-    <div class="character-spotlight-copy">
-      <span class="character-role">El Recién Llegado</span>
-      <h3>Marcello Muratori</h3>
-      <p class="character-quote">"Roma no compite con París. Simplemente, también conquista."</p>
-      <p>Heredero de una casa de cachemira en Roma, Marcello aparece en la temporada 4 y se convierte en uno de los pilares de la temporada 5, cuando Emily se muda a Italia para abrir la oficina de Agence Grateau. Su romance con Emily traslada parte de la estética de la serie del beige parisino a los tonos cálidos de la Toscana.</p>
-    </div>
-  </article>
-
-  <h3 class="subsection-title" id="supporting-characters" data-reveal>Personajes Secundarios</h3>
-
-  <div class="character-row character-row-secondary">
-
-    <article class="character-card" data-reveal>
-      <div class="character-media"><img src="https://m.media-amazon.com/images/M/MV5BNWUwZTQ1OTctMWU4My00MjYzLThkOWYtMzQyMzg0OGZmMjBhXkEyXkFqcGc@._V1_.jpg" alt="Retrato que representa a Luc" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Filósofo de Oficina</span>
-        <h3>Luc</h3>
-        <p class="character-quote">"El trabajo es solo una parte de la vida, no toda."</p>
-      </div>
-    </article>
-
-    <article class="character-card character-card-alt" data-reveal>
-      <div class="character-media"><img src="https://hips.hearstapps.com/hmg-prod/images/eip-101-unit-00232r-3d1f78b-1602526371.jpg?crop=0.668xw:1.00xh;0.114xw,0&resize=640:*" alt="Retrato que representa a Julien" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Estratega</span>
-        <h3>Julien</h3>
-        <p class="character-quote">"El detalle lo es todo, chérie."</p>
-      </div>
-    </article>
-
-    <article class="character-card" data-reveal>
-      <div class="character-media"><img src="https://hips.hearstapps.com/hmg-prod/images/emily-in-paris-n-s4-e3-00-27-23-06rc-66be5bcc0df3b.jpg?crop=0.668xw:1.00xh;0.250xw,0&resize=1200:*" alt="Retrato que representa a Nicolas" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Heredero</span>
-        <h3>Nicolas</h3>
-        <p class="character-quote">"Los negocios y el amor no siempre se llevan bien."</p>
-      </div>
-    </article>
-
-    <article class="character-card character-card-alt" data-reveal>
-      <div class="character-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSGjxHsum9SQ4DA0p-tr8ndz6WDr0Gz3H--VyBqDZR9Chx8-KlYT_hTo&s=10" alt="Retrato que representa a Antoine" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Cliente Encantador</span>
-        <h3>Antoine</h3>
-        <p class="character-quote">"El perfume correcto lo cambia todo."</p>
-      </div>
-    </article>
-
-    <article class="character-card" data-reveal>
-      <div class="character-media"><img src="https://www.datocms-assets.com/70938/1723454162-1723101831-img_8340.jpeg?auto=format%2Ccompress&cs=srgb" alt="Retrato que representa a Laurent" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Anfitrión</span>
-        <h3>Laurent G</h3>
-        <p class="character-quote">"En Saint-Tropez, todo se resuelve con rosé."</p>
-      </div>
-    </article>
-
-    <article class="character-card character-card-alt" data-reveal>
-      <div class="character-media"><img src="https://assets.capitalfm.com/2020/39/who-plays-pierre-cadault-in-emily-in-paris---jean-christophe-bouvet-1601405069-view-0.jpg" alt="Retrato que representa a Pierre" loading="lazy"></div>
-      <div class="character-copy">
-        <span class="character-role">El Maestro</span>
-        <h3>Pierre Cadault</h3>
-        <p class="character-quote">"La moda no se explica. Se impone."</p>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- ===== PARIS ===== -->
-<section class="paris" id="paris">
-  <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 04 — La Ville</span>
-    <h2>París, Como Escenario</h2>
-    <p class="section-lede">Cafés con demasiado encanto, calles que se fotografían solas y un río que vio todas las versiones posibles de un corazón roto. Estas son locaciones reales donde se filmó la serie.</p>
-  </div>
-
-  <div class="paris-grid">
-    <a class="paris-item span-tall" data-reveal href="#gallery">
-      <img src="https://images.unsplash.com/photo-1728059491756-8f97ea19ce05?ixid=M3w0NzkzMTh8MHwxfHNlYXJjaHwyfHxQbGFjZSUyMGRlJTIwbCUyN0VzdHJhcGFkZXxlbnwwfHx8fDE3NjA5NjY3NDV8MA&ixlib=rb-4.1.0&auto=format&w=1080&h=1350&fit=crop&q=80" alt="Place de l'Estrapade" loading="lazy">
-      <span class="paris-label">Place de l'Estrapade</span>
-      <span class="paris-caption">El edificio real del 5º arrondissement donde vive Emily. La fuente de la plaza aparece en varias escenas.</span>
     </a>
-    <a class="paris-item" data-reveal href="#gallery">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/elle-faust-pont-alexandre-iii-emily-in-paris-1602171063.png?resize=980:*" alt="Pont Alexandre III" loading="lazy">
-      <span class="paris-label">Pont Alexandre III</span>
-      <span class="paris-caption">El puente donde el equipo de Savoir filma el comercial de perfume del primer episodio.</span>
+    <a class="hub-card" href="moda.html" data-reveal>
+      <div class="hub-card-media"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-12/22/20/asset/dbb8a544b7f3/sub-buzz-1048-1640204741-10.jpg?crop=1506:1800;0,0&downsize=900:*&output-format=auto&output-quality=auto" alt="Look con boina roja y trench cream" loading="lazy"></div>
+      <div class="hub-card-copy">
+        <span class="hub-card-num">Capítulo 02</span>
+        <h3>Moda</h3>
+        <p>Estampados que chocan, boinas con actitud y el placard que lanzó mil capturas de pantalla.</p>
+        <span class="hub-card-cta">Leer más <svg viewBox="0 0 12 8"><polyline points="1,4 11,4"/><polyline points="7,1 11,4 7,7"/></svg></span>
+      </div>
     </a>
-    <a class="paris-item" data-reveal href="#gallery">
-      <img src="https://www.obonparis.com/uploads/EMILY%20IN%20PARIS/EMILY%20-%20THUY%20VERSION-06.jpeg" alt="Terra Nera" loading="lazy">
-      <span class="paris-label">Terra Nera</span>
-      <span class="paris-caption">El restaurante italiano que interpreta el bistró de Gabriel a lo largo de las cinco temporadas.</span>
+    <a class="hub-card" href="personajes.html" data-reveal>
+      <div class="hub-card-media"><img src="https://media.vogue.mx/photos/5faeaa006a65a5056f552df6/2:3/w_2560%2Cc_limit/EIP_101_Unit_00278R.jpg" alt="Retrato que representa a Emily" loading="lazy"></div>
+      <div class="hub-card-copy">
+        <span class="hub-card-num">Capítulo 03</span>
+        <h3>Personajes</h3>
+        <p>Siete personas, dos ciudades y demasiados cables cruzados. Conocé al elenco — y descubrí cuál sos vos.</p>
+        <span class="hub-card-cta">Leer más <svg viewBox="0 0 12 8"><polyline points="1,4 11,4"/><polyline points="7,1 11,4 7,7"/></svg></span>
+      </div>
     </a>
-    <a class="paris-item span-tall" data-reveal href="#gallery">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYAegBqoMIimLLmMtwaMToW0OX27N1ilZdK5urBWc4oQ&s=10" alt="Place de Valois" loading="lazy">
-      <span class="paris-label">Place de Valois</span>
-      <span class="paris-caption">La fachada de la oficina de Savoir y, después, de Agence Grateau, a metros del Louvre.</span>
+    <a class="hub-card" href="paris.html" data-reveal>
+      <div class="hub-card-media"><img src="https://images.unsplash.com/photo-1728059491756-8f97ea19ce05?ixid=M3w0NzkzMTh8MHwxfHNlYXJjaHwyfHxQbGFjZSUyMGRlJTIwbCUyN0VzdHJhcGFkZXxlbnwwfHx8fDE3NjA5NjY3NDV8MA&ixlib=rb-4.1.0&auto=format&w=1080&h=1350&fit=crop&q=80" alt="Place de l'Estrapade" loading="lazy"></div>
+      <div class="hub-card-copy">
+        <span class="hub-card-num">Capítulo 04</span>
+        <h3>París</h3>
+        <p>Cafés con demasiado encanto y un río que vio todas las versiones posibles de un corazón roto.</p>
+        <span class="hub-card-cta">Leer más <svg viewBox="0 0 12 8"><polyline points="1,4 11,4"/><polyline points="7,1 11,4 7,7"/></svg></span>
+      </div>
     </a>
-    <a class="paris-item span-wide" data-reveal href="#gallery">
-      <img src="https://s3.eu-west-1.amazonaws.com/ryo-prod-public-398019065442/03_jardin_du_luxembourg_pic_ed6c0ce310.jpg" alt="Jardin du Luxembourg" loading="lazy">
-      <span class="paris-label">Jardin du Luxembourg</span>
-      <span class="paris-caption">El parque donde Emily sale a correr casi todas las mañanas.</span>
+    <a class="hub-card" href="galeria.html" data-reveal>
+      <div class="hub-card-media"><img src="https://es.web.img2.acsta.net/r_1280_720/pictures/20/09/30/21/10/2604971.jpg" alt="Foto de la galería" loading="lazy"></div>
+      <div class="hub-card-copy">
+        <span class="hub-card-num">Capítulo 05</span>
+        <h3>Galería</h3>
+        <p>Postales, primeros planos y momentos parisinos espontáneos — hacé clic en cualquier foto para verla más de cerca.</p>
+        <span class="hub-card-cta">Leer más <svg viewBox="0 0 12 8"><polyline points="1,4 11,4"/><polyline points="7,1 11,4 7,7"/></svg></span>
+      </div>
     </a>
-    <a class="paris-item" data-reveal href="#gallery">
-      <img src="https://cdn.prod.rexby.com/image/7fccf313ab4f46d4ac7ddea06b570e3a?format=webp&width=1080&height=1350&quality=80" alt="Café de Flore" loading="lazy">
-      <span class="paris-label">Café de Flore</span>
-      <span class="paris-caption">El café de Saint-Germain-des-Prés donde Emily conoce a Thomas en la primera temporada.</span>
-    </a>
-    <a class="paris-item" data-reveal href="#gallery">
-      <img src="https://www.travelandleisure.com/thmb/QTi_wrRXcNqPrhLL-extCxxXVeM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/palais-garnier-opera-house-paris-EMILYLOCALES1020-ab5222b1590445c4ac1c55d2a7fcad81.jpg" alt="Palais Garnier" loading="lazy">
-      <span class="paris-label">Palais Garnier</span>
-      <span class="paris-caption">La ópera donde transcurre la icónica escena del ballet en la temporada 1.</span>
-    </a>
-    <a class="paris-item" data-reveal href="#gallery">
-      <img src="https://fredericmagazine.com/wp-content/uploads/2024/09/Screening-Room_Emily-in-Paris_Colonne-Vendome_105_Unit_00328R.jpg" alt="Place Vendôme" loading="lazy">
-      <span class="paris-label">Place Vendôme</span>
-      <span class="paris-caption">La plaza de alta joyería donde Emily conoce al diseñador Pierre Cadault.</span>
+    <a class="hub-card" href="contacto.html" data-reveal>
+      <div class="hub-card-media"><img src="images/hero.jpg" alt="Calle parisina a la hora dorada" loading="lazy"></div>
+      <div class="hub-card-copy">
+        <span class="hub-card-num">Capítulo 06</span>
+        <h3>Contacto</h3>
+        <p>¿Preguntas, notas de prensa o ganas de charlar sobre la última temporada? Escribinos.</p>
+        <span class="hub-card-cta">Leer más <svg viewBox="0 0 12 8"><polyline points="1,4 11,4"/><polyline points="7,1 11,4 7,7"/></svg></span>
+      </div>
     </a>
   </div>
 </section>
 
-<!-- ===== GALLERY ===== -->
-<section class="gallery" id="gallery">
-  <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 05 — L'Objectif</span>
-    <h2>Galería</h2>
-    <p class="section-lede">Postales, primeros planos y momentos parisinos espontáneos — hacé clic en cualquier foto para verla más de cerca.</p>
-  </div>
+</main>
 
-  <div class="masonry" id="masonry">
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 1 de la galería"><img src="https://es.web.img2.acsta.net/r_1280_720/pictures/20/09/30/21/10/2604971.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 2 de la galería"><img src="https://es.web.img2.acsta.net/r_1280_720/pictures/20/08/27/11/50/2908449.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 3 de la galería"><img src="https://es.web.img2.acsta.net/r_1280_720/pictures/20/09/30/09/14/2556499.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 4 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/pictures/22/09/23/11/37/0716863.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 5 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/pictures/20/09/22/10/24/0665087.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 6 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/img/1d/0b/1d0b7c7d7b18ef658c04e9dad6c4b9a4.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 7 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/pictures/20/07/23/11/42/1341413.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 8 de la galería"><img src="https://es.web.img2.acsta.net/r_1280_720/pictures/22/09/23/11/37/0520304.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 9 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/img/52/73/52736d1bab2a98ca31a51c82f725850e.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 10 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/pictures/22/09/23/11/37/0690343.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 11 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/pictures/22/09/23/11/37/0578023.jpg" alt="Foto de la galería" loading="lazy"></button>
-    <button class="masonry-item" type="button" data-reveal aria-label="Abrir foto 12 de la galería"><img src="https://es.web.img3.acsta.net/r_1280_720/img/75/d8/75d8eabb69707bee864bdf8d7ee28493.jpg" alt="Foto de la galería" loading="lazy"></button>
-  </div>
-</section>
-
-<!-- ===== QUOTE ===== -->
 <section class="quote-section">
   <svg class="quote-mark" viewBox="0 0 64 48" aria-hidden="true"><path d="M18.6 0C8.3 4.9 0 15.9 0 27.4 0 38.4 7.4 48 19.4 48c8.3 0 14.6-6.6 14.6-14.6 0-7.6-5.7-13.1-12.6-13.1-1.4 0-2.6.1-3.4.4C19.1 12.4 24.6 5.4 32 1.7L18.6 0zm34 0C42.3 4.9 34 15.9 34 27.4 34 38.4 41.4 48 53.4 48 61.7 48 68 41.4 68 33.4c0-7.6-5.7-13.1-12.6-13.1-1.4 0-2.6.1-3.4.4C53.1 12.4 58.6 5.4 66 1.7L52.6 0z" fill="currentColor"/></svg>
   <p class="quote-text" data-reveal>Siempre podés <em>reinventarte</em>.</p>
   <span class="quote-attr" data-reveal>— Emily Cooper</span>
 </section>
 
-<!-- ===== QUIZ ===== -->
-<section class="quiz" id="quiz">
-  <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 06 — Le Jeu</span>
-    <h2>¿Qué Personaje Sos?</h2>
-    <p class="section-lede">Cuatro preguntas. Un veredicto muy afrancesado.</p>
-  </div>
-
-  <div class="quiz-card" data-reveal>
-    <div class="quiz-progress" id="quizProgress">
-      <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-    </div>
-
-    <div class="quiz-body" id="quizBody">
-
-      <div class="quiz-question active" data-index="0">
-        <h3>Tu sábado a la mañana en París arranca con…</h3>
-        <div class="quiz-options">
-          <button data-value="emily">Un croissant y un plan improvisado</button>
-          <button data-value="mindy">Ensayando karaoke en la ducha</button>
-          <button data-value="gabriel">Eligiendo los productos más frescos del mercado</button>
-          <button data-value="alfie">Café, números y una buena planilla de cálculo</button>
-          <button data-value="camille">Una invitación a la inauguración de una galería</button>
-          <button data-value="sylvie">Un blazer impecable, sea cual sea el día</button>
-          <button data-value="marcello">Un espresso doble antes de la primera reunión en Roma</button>
-        </div>
-      </div>
-
-      <div class="quiz-question" data-index="1">
-        <h3>Tu lenguaje del amor es…</h3>
-        <div class="quiz-options">
-          <button data-value="emily">Gestos románticos enormes, un poco caóticos</button>
-          <button data-value="mindy">Un dueto que nadie pidió</button>
-          <button data-value="gabriel">Cocinarte algo desde cero</button>
-          <button data-value="alfie">Honestidad brutal, con un guiño</button>
-          <button data-value="camille">Lealtad, incluso cuando todo se complica</button>
-          <button data-value="sylvie">Gusto impecable y estándares altísimos</button>
-          <button data-value="marcello">Una escapada de fin de semana sin avisar</button>
-        </div>
-      </div>
-
-      <div class="quiz-question" data-index="2">
-        <h3>Tu idea de éxito profesional es…</h3>
-        <div class="quiz-options">
-          <button data-value="emily">Volverte viral por las razones correctas</button>
-          <button data-value="mindy">Ser dueña del escenario, literalmente</button>
-          <button data-value="gabriel">Un restaurante con tu nombre en la puerta</button>
-          <button data-value="alfie">Cerrar el trato antes del almuerzo</button>
-          <button data-value="camille">Manejar el negocio familiar, a tu manera</button>
-          <button data-value="sylvie">Ser la mujer más respetada de la sala</button>
-          <button data-value="marcello">Llevar el negocio familiar a otro país</button>
-        </div>
-      </div>
-
-      <div class="quiz-question" data-index="3">
-        <h3>Tu uniforme parisino es…</h3>
-        <div class="quiz-options">
-          <button data-value="emily">Estampados que chocan y una boina como declaración</button>
-          <button data-value="mindy">Lentejuelas. Siempre lentejuelas</button>
-          <button data-value="gabriel">Un delantal que vio mil servicios</button>
-          <button data-value="alfie">Un tapado a medida, sin vueltas</button>
-          <button data-value="camille">Neutros afrancesados sin esfuerzo aparente</button>
-          <button data-value="sylvie">Todo negro, toda confianza</button>
-          <button data-value="marcello">Cashmere de pies a cabeza</button>
-        </div>
-      </div>
-
-      <div class="quiz-result" id="quizResult">
-        <img id="resultImg" src="" alt="">
-        <span class="character-role" id="resultRole"></span>
-        <h3 id="resultName"></h3>
-        <p id="resultDesc"></p>
-        <button class="btn btn-outline" id="quizRetake">Repetir el Quiz</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== NEWSLETTER ===== -->
 <section class="newsletter">
   <span class="eyebrow eyebrow-center">Restez Connectés</span>
   <h2>Mantenete Cerca</h2>
   <p>Notas de estilo, novedades de los personajes y un poco de magia parisina, directo a tu casilla.</p>
   <form class="newsletter-form" id="newsletterForm">
-    <input type="email" id="newsletterEmail" placeholder="tu email" required aria-label="Dirección de email">
+    <input type="email" id="newsletterEmail" name="email" placeholder="tu email" required aria-label="Dirección de email">
     <button type="submit" class="btn btn-primary"><span>Suscribirme</span></button>
   </form>
   <p class="newsletter-msg" id="newsletterMsg" aria-live="polite">&nbsp;</p>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="contact" id="contact">
-  <div class="section-head" data-reveal>
-    <span class="eyebrow">Capítulo 07 — Contactez-nous</span>
-    <h2>Contacto</h2>
-    <p class="section-lede">¿Preguntas, notas de prensa o ganas de charlar sobre la última temporada? Escribinos.</p>
-  </div>
-
-  <div class="contact-grid">
-
-    <form class="contact-form" id="contactForm" data-reveal>
-      <div>
-        <label for="contactName">Nombre</label>
-        <input type="text" id="contactName" name="name" required>
-      </div>
-      <div>
-        <label for="contactEmail">Email</label>
-        <input type="email" id="contactEmail" name="email" required>
-      </div>
-      <div>
-        <label for="contactMessage">Mensaje</label>
-        <textarea id="contactMessage" name="message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary"><span>Enviar Mensaje</span></button>
-      <p class="contact-msg" id="contactMsg" aria-live="polite">&nbsp;</p>
-    </form>
-
-    <div class="contact-map" data-reveal>
-      <iframe
-        src="https://www.google.com/maps?q=Pont+Alexandre+III,Paris,France&output=embed"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Mapa de Pont Alexandre III, París"></iframe>
-      <span class="map-caption">Pont Alexandre III — donde arrancó todo. El puente donde Savoir filmó su primer gran comercial, en pleno corazón de París.</span>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<!-- ===== FOOTER ===== -->
 <footer class="footer">
   <div class="footer-top">
 
@@ -679,14 +188,14 @@
 
     <nav class="footer-links" aria-label="Navegación del pie de página">
       <span class="footer-heading">Navegar</span>
-      <a href="#home">Inicio</a>
-      <a href="#seasons">Temporadas</a>
-      <a href="#fashion">Moda</a>
-      <a href="#characters">Personajes</a>
-      <a href="#paris">París</a>
-      <a href="#gallery">Galería</a>
-      <a href="#quiz">Quiz</a>
-      <a href="#contact">Contacto</a>
+      <a href="index.html">Inicio</a>
+      <a href="temporadas.html">Temporadas</a>
+      <a href="moda.html">Moda</a>
+      <a href="personajes.html">Personajes</a>
+      <a href="paris.html">París</a>
+      <a href="galeria.html">Galería</a>
+      <a href="personajes.html#quiz">Quiz</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
 
     <div class="footer-social">
@@ -714,14 +223,6 @@
     <span class="footer-signoff">La vie est belle.</span>
   </div>
 </footer>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de la foto" aria-hidden="true">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
-    <svg viewBox="0 0 24 24"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
-  </button>
-  <img id="lightboxImg" src="" alt="">
-</div>
 
 <script src="script.js"></script>
 </body>
